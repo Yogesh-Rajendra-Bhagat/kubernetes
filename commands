@@ -1,0 +1,16 @@
+ kubectl get node
+ kubectl get pod
+ kubectl get pod -o wide
+ kubectl run firstpod --image=nginx
+ klubectl get pod -o wide
+ kubectl get pod -o wide
+ kubectl get pod newpods-bmjs -o=jsonpath='{.spec.containers[*].image}'
+ kubectl get pod newpods-bmjs -o=jsonpath='{.spec.nodeName}'
+ kubectl describe pod webapp
+ kubectl get pod webapp -o wide
+ kubectl describe pod webapp | grep agentx
+ kubectl delete pod webapp
+ kubectl run redis --image=redis123
+ kubectl edit pod redis
+ kubectl get pod redis -o=jsonpath='{.spec.containers[*].image}'
+history
